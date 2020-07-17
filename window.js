@@ -64,6 +64,7 @@ function drawChart() {
     chart = new Chart($('.chart'), {
         type: 'line',
         data: {
+            // 横坐标范围的含义：60 秒之前 ~ 现在
             labels: [
                 '60 秒', '', '', '', '', '', '', '', '', '',
                 '', '', '', '', '', '', '', '', '', '',
@@ -88,6 +89,7 @@ function drawChart() {
             scales: {
                 yAxes: [{
                     ticks: {
+                        // 控制纵坐标范围
                         beginAtZero: true,
                         max: 1
                     }
@@ -95,14 +97,18 @@ function drawChart() {
             },
             elements: {
                 point: {
+                    // 去掉折线图上的点
                     radius: 0
                 }
             },
             animation: {
+                // 取消图表更新时的过度动画
                 duration: 0
             }
         }
     });
+
+    // 每秒钟更新一次数据
     setInterval(updateDatasets, 1000);
 }
 
