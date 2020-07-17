@@ -1,0 +1,14 @@
+{
+  "name": "cpu-monitor-new",
+  "version": "1.0.0",
+  "description": "CPU activity monitor",
+  "repository": "electron/simple-samples",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron app.js"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^4.0.3"
+  }
+}
