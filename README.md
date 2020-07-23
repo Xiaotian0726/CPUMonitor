@@ -3,9 +3,16 @@
 一款仿任务管理器的能够实时显示 CPU 利用率的 `electron` 桌面应用
 
 ## 运行方式
-下载 `electron-v4.0.3-win32-x64` 的压缩包，解压之后在 `electron-v4.0.3-win32-x64` 的目录里执行以下命令：
+
+### windows 下
+执行以下命令：
 ```
-start electron.exe {本项目的路径}
+start electron.exe app
+```
+### macOS 下
+下载 `electron-v4.0.3-mas-x64.zip`，解压后将 Electron.app 放入该项目的目录下，然后执行以下命令：
+```
+open Electron.app --args {app 文件夹的绝对路径}
 ```
 
 ## 运行截图
